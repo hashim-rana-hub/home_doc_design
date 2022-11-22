@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  a {
+    @apply cursor-pointer outline-none;
+  }
+}
+@layer components {
+  .btn {
+    @apply px-8 py-3 bg-[#D9D9D9] rounded-[4.6875rem] text-gray-500
+    text-lg font-medium outline-none
+  }
+  .btn:active, .btn:focus {
+    @apply bg-[#B338FF] text-white
+  }
+  .btn:hover {
+    @apply opacity-75
+  }
+}
